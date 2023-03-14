@@ -21,7 +21,7 @@ public class Persona {
 	private double altura;// altura de persona
 
 	/*-- Constructor por defecto: sin parámetros --*/
-	private Persona() {
+	public Persona() {
 		this.nombre = "";
 		this.apellido = "";
 		this.edad = 0;
@@ -38,8 +38,7 @@ public class Persona {
 	 * @param edad
 	 * @param sexo
 	 */
-	private Persona(String nombre, int edad, String sexo) {
-		super();
+	public Persona(String nombre, int edad, String sexo) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.sexo = sexo;
@@ -56,8 +55,7 @@ public class Persona {
 	 * @param peso
 	 * @param altura   --
 	 */
-	private Persona(String nombre, String apellido, int edad, String dni, String sexo, double peso, double altura) {
-		super();
+	public Persona(String nombre, String apellido, int edad, String dni, String sexo, double peso, double altura) {
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.edad = edad;
@@ -67,4 +65,71 @@ public class Persona {
 		this.altura = altura;
 	}
 
+	// Imprimir atributos.
+	public void imprimirPersona() {
+		System.out.println("Nombre : " + this.nombre);
+		System.out.println("Apellido : " + this.apellido);
+		System.out.println("Edad : " + this.edad);
+		System.out.println("DNI : " + this.dni);
+		System.out.println("Sexo : " + this.sexo);
+		System.out.println("Peso : " + this.peso);
+		System.out.println("Altura = " + this.altura);
+	}
+
+	// GETTERS y SETTERS
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public String getDni() {
+		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
 }
