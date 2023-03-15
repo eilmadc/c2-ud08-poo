@@ -38,6 +38,8 @@ public class Password {
 
 	}
 
+	
+	//METODOS DE CLASE
 	public String generaContraseña(int longitud) {
 
 		// String donde guardamos los caracteres a medida que los vayamos obteniendo de
@@ -55,11 +57,19 @@ public class Password {
 		}
 		return pass;
 	}
+	
+	
+	//Imprimir Atributos
+	@Override
+	public String toString() {
+		return "Password [longitud=" + longitud + ", contraseña=" + contraseña + "]";
+	}
 
 	public void imprimirPassword() {
 		System.out.println("LONGITUD : " + this.longitud);
 		System.out.println("CONTRASEÑA :" + this.contraseña);
 	}
+
 
 	// GETTERS y SETTERS
 	public int getLongitud() {

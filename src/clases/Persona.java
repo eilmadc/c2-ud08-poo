@@ -65,7 +65,14 @@ public class Persona {
 		this.altura = altura;
 	}
 
+	//METODOS DE CLASE
 	// Imprimir atributos.
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", dni=" + dni + ", sexo="
+				+ sexo + ", peso=" + peso + ", altura=" + altura + "]";
+	}
+
 	public void imprimirPersona() {
 		System.out.println("Nombre : " + this.nombre);
 		System.out.println("Apellido : " + this.apellido);

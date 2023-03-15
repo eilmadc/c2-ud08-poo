@@ -57,7 +57,14 @@ public class Electrodomesticos {
 		this.peso = peso;
 	}
 
+	//METODOS DE CLASE
 	/* Imprimir atributos */
+	@Override
+	public String toString() {
+		return "Electrodomesticos [precioBase=" + precioBase + ", color=" + color + ", consumoEnergetico="
+				+ consumoEnergetico + ", peso=" + peso + "]";
+	}
+
 	public void imprimirElectrodomestico() {
 		System.out.println("Precio Base : " + this.precioBase);
 		System.out.println("Color : " + this.color);

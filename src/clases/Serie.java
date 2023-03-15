@@ -53,7 +53,15 @@ public class Serie {
 		this.creador = creador;
 	}
 
+	
+	//METODOS DE CLASE
 	/* Imprimir atributos */
+	@Override
+	public String toString() {
+		return "Serie [titulo=" + titulo + ", numeroTemporadas=" + numeroTemporadas + ", entregado=" + entregado
+				+ ", genero=" + genero + ", creador=" + creador + "]";
+	}
+	
 	public void imprimirSerie() {
 		System.out.println("Titulo : " + this.titulo);
 		System.out.println("Numero Temporadas : " + this.numeroTemporadas);
@@ -61,6 +69,8 @@ public class Serie {
 		System.out.println("Genero : " + this.genero);
 		System.out.println("Creador : " + this.creador);
 	}
+
+
 
 	// GETTERS y SETTERS
 	public String getTitulo() {
