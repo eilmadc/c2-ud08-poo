@@ -1,3 +1,4 @@
+package main;
 import clases.Persona;
 import clases.Password;
 import clases.Electrodomesticos;
